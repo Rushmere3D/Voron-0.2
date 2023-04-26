@@ -6,7 +6,7 @@ nav_exclude: true
 
 # Cheetah v3 Klipper Firmware
 
-The firmware installation process for the Fysetc Spider MCU.
+The firmware installation process for the Fysetc Cheetah v3 MCU.
 
 ### Prerequisites
 
