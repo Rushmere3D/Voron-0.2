@@ -35,7 +35,7 @@ The firmware installation process for the Fysetc Spider MCU.
   * Set the Clock Reference to `12 MHz crystal`
   * Set the Communication interface to `USB (on PA11/PA12)`  (note: see Fysetc documentation if you intend to use UART rather than USB)
 
-   ![](./images/makemenuconfig.jpg)
+   ![](./makemenuconfig.jpg)
 
 * Once the configuration is selected, press `q` to exit, and "Yes" when  asked to save the configuration.
 
@@ -63,7 +63,7 @@ There are multiple options for getting this firmware file installed onto your Sp
 10. Power up the Cheetah v3
 11. You can confirm that the flash was successful by running `ls /dev/serial/by-id`.  If the flash was successful, this should now show a klipper device, similar to:
  
-   ![](./images/stm32f446_id.png)
+   ![](./stm32f446_id.png)
 
    (note: this test is not applicable if the firmware was compiled for UART, rather than USB)
    
