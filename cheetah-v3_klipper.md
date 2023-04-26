@@ -54,7 +54,7 @@ The firmware installation process for the Fysetc Cheetah v3 MCU.
 8. Power off the Cheetah
 9. Remove the jumper from 3.3V/B0 and replace to B0 and G
 10. Power up the Cheetah
-11. You can confirm that the flash was successful by running `ls /dev/serial/by-id`.  If the flash was successful, this should now show a klipper device, similar to:
+11. You can confirm that the flash was successful by running `ls /dev/serial/by-id`.  If the flash was successful, this should now show a klipper device (Save this ID), similar to:
  
    ![](./stm32f446_id.png)
 
