@@ -1,3 +1,6 @@
+Thanks to the Voron team for their documention,
+This guide was created with their work as a template.
+
 # Cheetah v3 Klipper Firmware
 
 The firmware installation process for the Fysetc Cheetah v3 MCU.
