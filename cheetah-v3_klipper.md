@@ -36,7 +36,6 @@ The firmware installation process for the Fysetc Cheetah v3 MCU.
 * Run the command `make`
 * The `make` command, when completed, creates a firmware file **klipper.bin** which is stored in the folder `/home/pi/klipper/out`.  
 
-There are multiple options for getting this firmware file installed onto your Cheetah v3.
 
 ### Firmware Installation
 #### DFU Firmware Install
@@ -45,15 +44,15 @@ There are multiple options for getting this firmware file installed onto your Ch
 * Requires the installation of an extra jumper on the Cheetah v3
 * Does NOT require a microSD card
 
-1. Power off the Cheetah v3
-2. Install a jumper between BT0 and 3.3V
-3. Connect Cheetah v3 & Pi via USB
-4. Power on Cheetah v3
+1. Power off the Cheetah v3 if powered on
+2. Install a jumper between 3.3V and B0 (Move jumper from B0 and G)
+3. Connect Cheetah v3 & Pi via USB and the multi-pin cable supplied
+4. Power on Cheetah v3 via the main PSU, this will also power the Pi
 5. From your ssh session, run `cd ~/klipper` to make sure you are in the correct directory
 6. Run `lsusb`. and find the ID of the DFU device.
 7. Run `make flash FLASH_DEVICE=1234:5678`, replacing 1234:5678 with the ID from the previous step
 8. Power off the Cheetah v3
-9. Remove the jumper from BT0/3.3V
+9. Remove the jumper from 3.3V/B0 and replace to B0 and G
 10. Power up the Cheetah v3
 11. You can confirm that the flash was successful by running `ls /dev/serial/by-id`.  If the flash was successful, this should now show a klipper device, similar to:
  
@@ -61,4 +60,5 @@ There are multiple options for getting this firmware file installed onto your Ch
 
    (note: this test is not applicable if the firmware was compiled for UART, rather than USB)
    
-### Back to [Software Installation](./index.md#klipper-octoprint-configuration)
+This ID can now be placed in the printer.cfg, within Klipper.
+   
