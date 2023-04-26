@@ -12,8 +12,8 @@ The firmware installation process for the Fysetc Spider MCU.
 
 * Klipper must be installed onto the Raspberry Pi
 * It is desirable, though not strictly necessary to have a small sdcard available
-* Even if you intend to power your Pi with the Spider, during this flashing process, you will find it far more convenient to power your Pi from some other source, such as a regular USB power supply
-* Voron Design recommends using USB to control the Spider, which simply requires connecting a USB-A to USB-C cable between the Spider and Pi.  If you prefer a UART connection, please consult the fysetc documentation for the necessary configuration adjustments.
+* Even if you intend to power your Pi with the Cheetah v3, during this flashing process, you will find it far more convenient to power your Pi from some other source, such as a regular USB power supply
+* Voron Design recommends using USB to control the Cheetah v3, which simply requires connecting a USB-A to USB-C cable between the Cheetah v3 and Pi.  If you prefer a UART connection, please consult the fysetc documentation for the necessary configuration adjustments.
 
 ### Build Firmware Image
 
