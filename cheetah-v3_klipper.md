@@ -42,13 +42,13 @@ The firmware installation process for the Fysetc Cheetah v3 MCU.
 * Run the command `make`
 * The `make` command, when completed, creates a firmware file **klipper.bin** which is stored in the folder `/home/pi/klipper/out`.  
 
-There are multiple options for getting this firmware file installed onto your Spider.
+There are multiple options for getting this firmware file installed onto your Cheetah v3.
 
 ### Firmware Installation
 #### DFU Firmware Install
 
 * Requires a USB connection
-* Requires the installation of an extra jumper on the Spider
+* Requires the installation of an extra jumper on the Cheetah v3
 * Does NOT require a microSD card
 
 1. Power off the Cheetah v3
