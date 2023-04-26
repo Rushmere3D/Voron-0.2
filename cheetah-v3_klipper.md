@@ -59,6 +59,7 @@ The firmware installation process for the Fysetc Cheetah v3 MCU.
    ![](./stm32f446_id.png)
 
    (note: this test is not applicable if the firmware was compiled for UART, rather than USB)
+   
 12. You can now power down both the Pi (choosing shutdown from the Mainsail UI) and Cheetah
 13. Now connect the Pi to the cheetah with both USB and the multi-pin cable supplied, but remove the power supply you used to power the Pi for the steps above
 14. Power up the V0.2
