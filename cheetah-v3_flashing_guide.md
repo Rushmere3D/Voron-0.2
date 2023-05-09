@@ -32,7 +32,7 @@ The firmware installation process for the Fysetc Cheetah v3 MCU.
   * Set the Clock Reference to `12 MHz crystal`
   * Set the Communication interface to `USB (on PA11/PA12)`  (note: see Fysetc documentation if you intend to use UART rather than USB)
 
-   ![](./makemenuconfig.jpg)
+   ![](Images/makemenuconfig.jpg)
 
 * Once the configuration is selected, press `q` to exit, and "Yes" when  asked to save the configuration.
 
@@ -59,7 +59,7 @@ The firmware installation process for the Fysetc Cheetah v3 MCU.
 10. Power up the Cheetah
 11. You can confirm that the flash was successful by running `ls /dev/serial/by-id`.  If the flash was successful, this should now show a klipper device (Save this ID), similar to:
  
-   ![](./stm32f446_id.png)
+   ![](Images/stm32f446_id.png)
 
    (note: this test is not applicable if the firmware was compiled for UART, rather than USB)
    
