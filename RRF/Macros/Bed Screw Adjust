@@ -1,0 +1,52 @@
+M291 P"Bed Screw Adjust..." S1 T0  		; display message
+G28
+ 
+M300 S200 P500                         	; beep
+G4 S1
+M300 S200 P500
+G4 S1
+M300 S200 P500
+ 
+M292                                   	; hide message
+M291 P"Front Screw" S3   				; ask the user
+G1 X60 Y5 Z0 F5000                      ; Move
+M400                                   	; wait for moves to complete
+
+M300 S200 P500                         	; beep
+G4 S1
+M300 S200 P500
+G4 S1
+M300 S200 P500
+
+M292                                   	; hide message
+M291 P"Back Left Screw" S3   			; ask the user
+G1 Z10 F5000
+M400
+G1 X5 Y115 Z0 F5000                     ; Move
+M400
+
+M300 S200 P500                         	; beep
+G4 S1
+M300 S200 P500
+G4 S1
+M300 S200 P500
+
+M292                                   	; hide message
+M291 P"Back Right Screw" S3   			; ask the user
+G1 Z10 F5000
+M400
+G1 X155 Y115 Z0 F5000                   ; Move
+M400
+
+M300 S200 P500                         	; beep
+G4 S1
+M300 S200 P500
+G4 S1
+M300 S200 P500
+
+M292                                   	; hide message
+M291 P"Finished" S3   					; ask the user
+G1 Z10 F5000
+M400
+G1 X60 Y60 Z25 F5000                    ; Move
+M400
